@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+.btn-success{
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+}
+
+.centered-div{
+
+    position: absolute;
+    background-color: #1c1818;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+}

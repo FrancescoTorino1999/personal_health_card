@@ -1,5 +1,18 @@
-<div>
+<div class="centered-div">
 
-  <h1> Welcome to your healthy card </h1>
+  <div *ngIf="!this.logging" class="centered-div">
+
+    <h1 style = "color: green; margin-bottom: 30px;"> Welcome to my healthy card </h1>
+
+    <button type="button" (click)="this.navigate('login')" class="btn btn-success">Accedi</button>
+
+  </div>
+
+  <div *ngIf="this.logging">
+
+    <router-outlet></router-outlet>
+
+  </div>
 
 </div>
+
